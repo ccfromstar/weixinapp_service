@@ -2,9 +2,9 @@
 var settings = require('../settings');
 var mysql = require('mysql');
 module.exports = mysql.createPool({
-    host: settings.host,
-    user: settings.user,
-    password: settings.password,
-    database:settings.database,
-    port: settings.port
+    host: settings.db.host,
+    user: settings.db.user,
+    password: settings.db.password,
+    database:settings.db.database,
+    port: settings.db.port
 });
